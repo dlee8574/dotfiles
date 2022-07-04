@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+# ==============================================================================
+# file       : bash_profile
+# author     : daniel lee
+# description: bash configuration file (run by login shell)
+# ==============================================================================
+
+# source ~/.bashrc
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi

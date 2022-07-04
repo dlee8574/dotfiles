@@ -1,0 +1,26 @@
+#!/usr/bin/bash
+# ==============================================================================
+# file       : bashrc
+# author     : daniel lee
+# description: bash configuration file (run by non-login shell)
+# ==============================================================================
+
+# source /etc/bashrc
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# load my bash aliases
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# load my bash functions
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions
+fi
+
+# load my work environment
+if [ -f ~/.work_env.bash ]; then
+    . ~/.work_env.bash
+fi

@@ -1,0 +1,69 @@
+#!/usr/bin/bash
+# ==============================================================================
+# file       : bash_aliases
+# author     : daniel lee
+# description: my bash aliases
+# ==============================================================================
+
+# cd
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+# ls
+alias ls='ls --color=auto'
+alias l='ls -Ahl'
+
+# clear
+alias c='clear'
+
+# history
+alias h='history'
+
+# grep
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias hgrep='history | grep'
+
+# mkdir
+alias mkdir='mkdir -pv'
+
+# rm
+alias rm='rm -I --preserve-root'
+
+# mv
+alias mv='mv -i'
+
+# cp
+alias cp='cp -i'
+
+# ln
+alias ln='ln -i'
+
+# chown
+alias chown='chown --preserve-root'
+
+# chmod
+alias chmod='chmod --preserve-root'
+
+# chgrp
+alias chgrp='chgrp --preserve-root'
+
+# df
+alias df='df -H'
+
+# du
+alias du='du -ch'
+
+# rsync
+alias cpv='rsync -ah --info=progress2'
+
+# exit
+alias x='exit'
+alias :q='exit'
+
+# find
+alias dfind='find . -type d -name'
+alias ffind='find . -type f -name'

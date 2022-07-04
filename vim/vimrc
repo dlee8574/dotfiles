@@ -1,0 +1,23 @@
+" ==============================================================================
+" file       : vimrc
+" author     : daniel lee
+" description: vim configuration file
+" ==============================================================================
+
+" manage plugins
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+    Plugin 'scrooloose/nerdtree'                " plugin: nerdtree
+    Plugin 'altercation/vim-colors-solarized'   " plugin: vim-colors-solarized
+    Plugin 'bling/vim-airline'                  " plugin: vim-airline
+    Plugin 'vim-airline/vim-airline-themes'     " plugin: vim-airline-themes
+    Plugin 'christoomey/vim-tmux-navigator'     " plugin: vim-tmux-navigator
+    Plugin 'vhda/verilog_systemverilog.vim'     " plugin: verilog_systemverilog.vim
+    Plugin 'yggdroot/indentline'                " plugin: indentline
+call vundle#end()
+
+" load my vim settings
+source ~/.settings.vim
+
+" load my vim mappings
+source ~/.mappings.vim

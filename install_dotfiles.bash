@@ -62,6 +62,9 @@ if [ ! -d ~/.tmux/plugins/tpm ]; then
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
 
+# install all tmux plugins
+. ~/.tmux/plugins/tpm/bin/install_plugins
+
 # install vim plugin manager if not exists
 if [ ! -d ~/.vim/bundle ]; then
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

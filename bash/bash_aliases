@@ -12,8 +12,8 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 # ls
-alias ls='ls --color=auto'
-alias l='ls -Ahl'
+alias l='ls --color=auto'
+alias ll='ls -Ahl'
 
 # clear
 alias c='clear'

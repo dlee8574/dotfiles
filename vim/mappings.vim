@@ -4,7 +4,7 @@
 " description: my vim mappings
 " ==============================================================================
 
-" define map leader
+" define my map leader key
 let mapleader=","
 
 " exit insert mode
@@ -13,22 +13,27 @@ ino jk <esc>
 " enter command mode
 nno <space> <s-:>
 
-" navigate splits
-nno <c-k> <c-w><c-k>
-nno <c-j> <c-w><c-j>
-nno <c-h> <c-w><c-h>
-nno <c-l> <c-w><c-l>
+" disable arrow keys in normal mode
+nno <up> <nop>
+nno <down> <nop>
+nno <left> <nop>
+nno <right> <nop>
 
-" resize splits
-nno <leader>r <c-w>=
+" disable arrow keys in insert mode
+ino <up> <nop>
+ino <down> <nop>
+ino <left> <nop>
+ino <right> <nop>
 
-" move around buffers
-nno <leader>f <s-:>bn<cr>
-nno <leader>d <s-:>bp<cr>
+" navigate windows
+nno <c-k> <c-w>k
+nno <c-j> <c-w>j
+nno <c-h> <c-w>h
+nno <c-l> <c-w>l
 
 " plugin: nerdtree
 nno <leader>n <s-:>NERDTreeToggle<cr>
-nno <c-f> <s-:>NERDTreeFind<cr>
+nno <leader>f <s-:>NERDTreeFind<cr>
 
 " plugin: vim-tmux-navigator
 nno <silent> <c-k> :TmuxNavigateUp<cr>

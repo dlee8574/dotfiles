@@ -11,15 +11,15 @@ set fileencoding=utf-8
 set list
 set listchars=eol:↲
 
+" show and highlight line numbers
+set number
+set cursorline
+
 " enable 4-space tab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-
-" show and highlight line number
-set number
-set cursorline
 
 " show tabline
 set showtabline=2
@@ -29,6 +29,14 @@ syntax enable
 
 " set folding method
 set foldmethod=marker
+
+" highlight search keywords
+set hlsearch
+set incsearch
+
+" adjust split location
+set splitright
+set splitbelow
 
 " plugin: nerdtree
 autocmd StdinReadPre * let s:std_in=1

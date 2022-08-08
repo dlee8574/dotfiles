@@ -4,8 +4,11 @@
 # description: my tmux settings
 # ==============================================================================
 
-# enable mouse
+# enable mouse mode
 set -g mouse on
 
-# renumber windows
+# re-number windows
 set -g renumber-windows on
+
+# change 'status-left' length
+set -g status-left-length 30

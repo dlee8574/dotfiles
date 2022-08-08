@@ -2,10 +2,10 @@
 # ==============================================================================
 # file       : bashrc
 # author     : daniel lee
-# description: bash configuration file (run by non-login shell)
+# description: my bash configuration file (run by non-login shell)
 # ==============================================================================
 
-# source /etc/bashrc
+# load default bash configuration
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi

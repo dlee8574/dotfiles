@@ -4,39 +4,47 @@
 " description: my vim settings
 " ==============================================================================
 
-" enable utf-8 file encoding
-set fileencoding=utf-8
-
-" show hidden characters
-set list
-set listchars=eol:↲
-
-" show and highlight line numbers
-set number
-set cursorline
-
-" enable 4-space tab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-
-" show tabline
-set showtabline=2
+" enable automatic indentation
+filetype indent on
 
 " enable syntax highlighting
 syntax enable
 
-" set folding method
-set foldmethod=marker
-
-" highlight search keywords
+" enable search highlighting
 set hlsearch
 set incsearch
 
-" adjust split location
+" show line numbers
+set number
+set relativenumber
+
+" show tab line
+set showtabline=2
+
+" set invisible characters
+set list
+set listchars=eol:↲
+
+" set fold method
+set foldmethod=marker
+
+" set split-window position
 set splitright
 set splitbelow
+
+" change tab settings
+set shiftwidth=4
+set expandtab       " expand out a tab to spaces
+set tabstop=4
+set softtabstop=0
+
+" change file search settings
+set nocompatible
+set path+=**        " add search path
+set wildmenu
+
+" highlight the screen line of cursor
+set cursorline
 
 " plugin: nerdtree
 autocmd StdinReadPre * let s:std_in=1
@@ -57,6 +65,7 @@ silent! colorscheme solarized
 " plugin: vim-airline
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter="unique_tail_improved"
+let g:airline#extensions#tabline#buffer_nr_show=1
 let g:airline_statusline_ontop=0
 let g:airline_powerline_fonts=1
 

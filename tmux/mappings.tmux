@@ -4,11 +4,14 @@
 # description: my tmux mappings
 # ==============================================================================
 
-# change prefix (default: ctrl + b)
+# re-define prefix key (default: ctrl + b) to ctrl + space
 unbind C-space
 set -g prefix C-space
 bind C-space send-prefix
 
-# remap shortcuts to split a window
-bind | split-window -hc "{pane_current_path}"
-bind - split-window -vc "{pane_current_path}"
+# re-load .tmux.conf
+bind r source-file ~/.tmux.conf \; display-message ".tmux.conf has been re-loaded!"
+
+# split a window into panes
+bind | split-window -hc "{pane_current_path}" # horizontal
+bind - split-window -vc "{pane_current_path}" # vertical

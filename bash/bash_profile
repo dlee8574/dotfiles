@@ -2,10 +2,10 @@
 # ==============================================================================
 # file       : bash_profile
 # author     : daniel lee
-# description: bash configuration file (run by login shell)
+# description: my bash configuration file (run by login shell)
 # ==============================================================================
 
-# source ~/.bashrc
+# load my bash configuration
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi

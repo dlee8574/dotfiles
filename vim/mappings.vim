@@ -40,6 +40,12 @@ nno ]b <s-:>bnext<cr>
 nno [B <s-:>bfirst<cr>
 nno ]B <s-:>blast<cr>
 
+" navigate quickfix list
+nno [q <s-:>cprevious<cr>
+nno ]q <s-:>cnext<cr>
+nno [Q <s-:>cfirst<cr>
+nno ]Q <s-:>clast<cr>
+
 " toggle line numbers on and off
 nno <f3> <s-:>set number!<cr>
 

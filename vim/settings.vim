@@ -40,7 +40,7 @@ set softtabstop=0
 
 " change file search settings
 set nocompatible
-set path+=**        " add search path
+set path+=**        " search all subdirectories recursively
 set wildmenu
 
 " highlight the screen line of cursor

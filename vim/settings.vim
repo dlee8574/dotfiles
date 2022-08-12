@@ -34,17 +34,22 @@ set splitbelow
 
 " change tab settings
 set shiftwidth=4
-set expandtab       " expand out a tab to spaces
+set expandtab                                           " expand out a tab to spaces
 set tabstop=4
 set softtabstop=0
 
 " change file search settings
 set nocompatible
-set path+=**        " search all subdirectories recursively
+set path+=**                                            " search all subdirectories recursively
 set wildmenu
 
 " highlight the screen line of cursor
 set cursorline
+
+" define error formats for quickfix list
+set errorformat-=%f(%l):%m                              " ncvlog
+set errorformat+=%.%#\ *%t\\,%.%#(%f\\,%l\|%c):\ %m     " ncvlog
+set errorformat+=%-G%.%#
 
 " plugin: nerdtree
 autocmd StdinReadPre * let s:std_in=1

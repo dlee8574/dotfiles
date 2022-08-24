@@ -4,20 +4,21 @@
 " description: my vim configuration file
 " ==============================================================================
 
-" manage plugins
-set rtp+=~/.vim/bundle/Vundle.vim
+" [1] manage plugins ===========================================================
+set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
     Plugin 'scrooloose/nerdtree'
     Plugin 'altercation/vim-colors-solarized'
     Plugin 'bling/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
     Plugin 'christoomey/vim-tmux-navigator'
-    Plugin 'vhda/verilog_systemverilog.vim'
     Plugin 'yggdroot/indentline'
+    Plugin 'romainl/vim-qf'
+    Plugin 'stefandtw/quickfix-reflector.vim'
 call vundle#end()
 
-" load my vim settings
+" [2] load my vim settings =====================================================
 source ~/.settings.vim
 
-" load my vim mappings
+" [3] load my vim mappings =====================================================
 source ~/.mappings.vim
